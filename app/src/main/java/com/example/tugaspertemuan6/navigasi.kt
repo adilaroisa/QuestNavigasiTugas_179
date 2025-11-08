@@ -24,8 +24,6 @@ enum class Navigasi {
 fun DataApp(
     navController: NavHostController = rememberNavController()
 ) {
-    // TIDAK ADA STATE DI SINI
-
     Scaffold(modifier = Modifier.fillMaxSize()) { isiRuang ->
         NavHost(
             navController = navController,

@@ -116,7 +116,7 @@ fun FormIsian(
                         color = colorResource(id = R.color.grey_label)
                     )
                     Row(modifier = Modifier.fillMaxWidth()) {
-                        // Radio Laki-laki (Kode ditulis langsung)
+                        // Radio Laki-laki
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             RadioButton(
                                 selected = jenisKelamin == strLaki,
@@ -125,7 +125,7 @@ fun FormIsian(
                             Text(text = strLaki)
                         }
                         Spacer(modifier = Modifier.width(dimensionResource(id = R.dimen.spacer_medium)))
-                        // Radio Perempuan (Kode ditulis langsung)
+                        // Radio Perempuan
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             RadioButton(
                                 selected = jenisKelamin == strPerempuan,
@@ -229,7 +229,7 @@ fun FormIsian(
             },
             text = {
                 Column {
-                    // Data ditulis langsung
+
                     Text(text = "${stringResource(id = R.string.dialog_label_nama)}: $nama")
                     Text(text = "${stringResource(id = R.string.dialog_label_jk)}: $jenisKelamin")
                     Text(text = "${stringResource(id = R.string.dialog_label_status)}: $statusPerkawinan")
