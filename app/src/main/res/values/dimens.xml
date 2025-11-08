@@ -1,31 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="selamat_datang">Selamat Datang</string>
-    <string name="logo_content_desc">CARD-LST Mobile App 2025 Logo</string>
-    <string name="masuk">Masuk</string>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="padding_xlarge">32dp</dimen>
 
-    <string name="form_title">Formulir Pendaftaran</string>
-    <string name="label_nama_lengkap">NAMA LENGKAP</string>
-    <string name="placeholder_nama">Isikan nama lengkap</string>
-    <string name="label_jenis_kelamin">JENIS KELAMIN</string>
-    <string name="jk_laki">Laki-laki</string>
-    <string name="jk_perempuan">Perempuan</string>
-    <string name="label_status">STATUS PERKAWINAN</string>
-    <string name="status_janda">Janda</string>
-    <string name="status_lajang">Lajang</string>
-    <string name="status_duda">Duda</string>
-    <string name="label_alamat">ALAMAT</string>
-    <string name="placeholder_alamat">Isikan alamat</string>
-    <string name="btn_beranda">Beranda</string>
-    <string name="btn_submit">Submit</string>
+    <dimen name="spacer_medium">16dp</dimen>
+    <dimen name="spacer_large">20dp</dimen>
+    <dimen name="spacer_xlarge">48dp</dimen>
 
-    <string name="dialog_title">Data Berhasil Disimpan</string>
-    <string name="dialog_label_nama">Nama</string>
-    <string name="dialog_label_jk">Jenis Kelamin</string>
-    <string name="dialog_label_status">Status</string>
-    <string name="dialog_label_alamat">Alamat</string>
-    <string name="dialog_btn_ok">OK</string>
+    <dimen name="logo_size">200dp</dimen>
+    <dimen name="button_height">50dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="card_elevation_small">4dp</dimen>
 
-    <string name="list_title">List Daftar Peserta</string>
-    <string name="btn_formulir">Formulir</string>
+    <dimen name="font_size_small_label">10sp</dimen>
+    <dimen name="font_size_label">14sp</dimen>
+    <dimen name="font_size_body">16sp</dimen>
+    <dimen name="font_size_button">18sp</dimen>
+    <dimen name="font_size_header">28sp</dimen>
 </resources>
