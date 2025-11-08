@@ -20,4 +20,11 @@ fun DataApp(
             navController = navController,
             startDestination = Navigasi.Home.name,
             modifier = Modifier.padding(paddingValues = isiRuang)
-        )
+        ) {
+            // 1. Halaman Home
+            composable(route = Navigasi.Home.name) {
+                HalamanHome(
+                    onMasukClick = { navController.navigate(Navigasi.ListPeserta.name) }
+                )
+            }
+
