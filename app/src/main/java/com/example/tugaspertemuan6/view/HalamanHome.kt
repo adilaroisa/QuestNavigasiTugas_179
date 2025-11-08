@@ -44,3 +44,22 @@ fun HalamanHome(
 
                 Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_xlarge)))
 
+                // Info Developer
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text(
+                        text = "Adila",
+                        fontSize = dimensionResource(id = R.dimen.font_size_body).value.sp,
+                        color = colorResource(id = R.color.dark_purple_text)
+                    )
+                    Text(
+                        text = "20230140179",
+                        fontSize = dimensionResource(id = R.dimen.font_size_body).value.sp,
+                        color = colorResource(id = R.color.dark_purple_text)
+                    )
+                }
+
+                Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_xlarge)))
+
+
+
+}
