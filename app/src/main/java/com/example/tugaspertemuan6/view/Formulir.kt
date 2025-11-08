@@ -40,3 +40,62 @@ fun FormIsian(
             )
         }
     ) { isiRuang ->
+        Column(
+            modifier = Modifier
+                .padding(isiRuang)
+                .fillMaxSize()
+                .padding(dimensionResource(id = R.dimen.padding_medium)),
+            horizontalAlignment = Alignment.CenterHorizontally,
+        ) {
+            Card(
+                modifier = Modifier.fillMaxWidth(0.9f),
+                colors = CardDefaults.cardColors(containerColor = Color.White),
+                shape = MaterialTheme.shapes.large,
+                elevation = CardDefaults.cardElevation(
+                    defaultElevation = dimensionResource(id = R.dimen.card_elevation)
+                )
+            ) {
+                Column(
+                    modifier = Modifier.padding(dimensionResource(id = R.dimen.padding_large)),
+                    horizontalAlignment = Alignment.Start
+                ) {
+                    // NAMA LENGKAP
+                    Text(
+                        text = stringResource(id = R.string.label_nama_lengkap),
+                        fontSize = dimensionResource(id = R.dimen.font_size_label).value.sp,
+                        color = colorResource(id = R.color.grey_label)
+                    )
+                    OutlinedTextField(
+                        value = nama,
+                        onValueChange = { nama = it },
+                        label = { Text(text = stringResource(id = R.string.placeholder_nama)) },
+                        modifier = Modifier.fillMaxWidth(),
+                        singleLine = true
+                    )
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_large)))
+
+                    // JENIS KELAMIN
+                    Text(
+                        text = stringResource(id = R.string.label_jenis_kelamin),
+                        fontSize = dimensionResource(id = R.dimen.font_size_label).value.sp,
+                        color = colorResource(id = R.color.grey_label)
+                    )
+                    Row(modifier = Modifier.fillMaxWidth()) {
+                        // Radio Laki-laki (Kode ditulis langsung)
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            RadioButton(
+                                selected = jenisKelamin == strLaki,
+                                onClick = { jenisKelamin = strLaki }
+                            )
+                            Text(text = strLaki)
+                        }
+                        Spacer(modifier = Modifier.width(dimensionResource(id = R.dimen.spacer_medium)))
+                        // Radio Perempuan (Kode ditulis langsung)
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            RadioButton(
+                                selected = jenisKelamin == strPerempuan,
+                                onClick = { jenisKelamin = strPerempuan }
+                            )
+                            Text(text = strPerempuan)
+                        }
+                    }
