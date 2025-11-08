@@ -108,3 +108,48 @@ fun ListPesertaScreen(
 
 
 
+@Composable
+fun PesertaCard(peserta: PesertaData) {
+    Card(
+        modifier = Modifier.fillMaxWidth(),
+        elevation = CardDefaults.cardElevation(
+            defaultElevation = dimensionResource(id = R.dimen.card_elevation_small)
+        ),
+        colors = CardDefaults.cardColors(containerColor = Color.White),
+        shape = MaterialTheme.shapes.medium
+    ) {
+        Column(modifier = Modifier.padding(dimensionResource(id = R.dimen.padding_medium))) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                DataLabelValue(
+                    label = stringResource(id = R.string.label_nama_lengkap),
+                    value = peserta.nama,
+                    modifier = Modifier.weight(1f)
+                )
+                DataLabelValue(
+                    label = stringResource(id = R.string.label_jenis_kelamin),
+                    value = peserta.jenisKelamin,
+                    modifier = Modifier.weight(1f)
+                )
+            }
+            Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_small)))
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                DataLabelValue(
+                    label = stringResource(id = R.string.label_status),
+                    value = peserta.statusPerkawinan,
+                    modifier = Modifier.weight(1f)
+                )
+                DataLabelValue(
+                    label = stringResource(id = R.string.label_alamat),
+                    value = peserta.alamat,
+                    modifier = Modifier.weight(1f)
+                )
+            }
+        }
+    }
+}
