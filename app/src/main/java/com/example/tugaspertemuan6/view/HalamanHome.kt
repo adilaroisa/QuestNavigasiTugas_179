@@ -61,5 +61,18 @@ fun HalamanHome(
                 Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_xlarge)))
 
 
-
+                Button(
+                    onClick = onMasukClick,
+                    modifier = Modifier
+                        .fillMaxWidth(0.7f)
+                        .height(dimensionResource(id = R.dimen.button_height))
+                ) {
+                    Text(
+                        text = stringResource(id = R.string.masuk),
+                        fontSize = dimensionResource(id = R.dimen.font_size_button).value.sp
+                    )
+                }
+            }
+        }
+    }
 }
