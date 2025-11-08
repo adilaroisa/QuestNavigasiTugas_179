@@ -138,3 +138,18 @@ fun FormIsian(
                     }
                     Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_large)))
 
+                    // ALAMAT
+                    Text(
+                        text = stringResource(id = R.string.label_alamat),
+                        fontSize = dimensionResource(id = R.dimen.font_size_label).value.sp,
+                        color = colorResource(id = R.color.grey_label)
+                    )
+                    OutlinedTextField(
+                        value = alamat,
+                        onValueChange = { alamat = it },
+                        label = { Text(text = stringResource(id = R.string.placeholder_alamat)) },
+                        modifier = Modifier.fillMaxWidth()
+                    )
+
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_xlarge)))
+
